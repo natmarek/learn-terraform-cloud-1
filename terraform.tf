@@ -1,10 +1,10 @@
 terraform {
 
   cloud {
-    organization = "organization-name"
+    organization = "natalia-dev"
 
     workspaces {
-      name = "learn-terraform-cloud"
+      name = "dev"
     }
   }
 
@@ -16,4 +16,11 @@ terraform {
   }
 
   required_version = ">= 0.14.0"
+
+
+}
+
+provider "aws" {
+  region = "eu-west-1"
+
 }
